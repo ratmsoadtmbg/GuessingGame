@@ -13,7 +13,8 @@ def main():
         try:
             guess = int(input("Type guess here: "))
         except:
-            raise Exception("I know you think you're clever, but please try to stick to simple numbers here.")
+            print("I know you think you're clever, but please try to stick to simple numbers here.\n")
+            continue
         if guess < number:
             print("\nToo low! Try again!")
             guesses.append(f">{guess}")
